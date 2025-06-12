@@ -21,7 +21,7 @@ export async function completeChapter(moduleId: number, chapterId: number) {
       { userId },
       {
         $addToSet: { [`modules.${moduleId}.completedChapters`]: chapterId },
-        $inc: { xp: 10 }, // Award XP for completing a chapter
+        $inc: { xp: 10 }, 
       },
       { upsert: true },
     )

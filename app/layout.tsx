@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "ConstitutionQuest - Learn the Indian Constitution",
   description: "A gamified platform to learn the Indian Constitution in an engaging way",
-    generator: 'v0.dev'
+    
 }
 
 export default function RootLayout({

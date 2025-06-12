@@ -1,8 +1,7 @@
-// This script initializes the MongoDB database with sample data for the Constitution learning platform
 
 import { MongoClient } from "mongodb"
 
-// In a real application, this would be an environment variable
+
 const uri = process.env.MONGODB_URI || "mongodb://localhost:27017"
 
 async function seedDatabase() {
@@ -17,7 +16,7 @@ async function seedDatabase() {
 
     const db = client.db("constitution_quest")
 
-    // Clear existing collections
+
     await Promise.all([
       db
         .collection("modules")

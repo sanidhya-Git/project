@@ -1,11 +1,10 @@
 import clientPromise from "./db"
 import { cache } from "react"
 
-// Get user profile data
+
 export const getUserProfile = cache(async (userId: string) => {
   try {
-    // This would normally fetch data from MongoDB
-    // For demo purposes, we're returning mock data
+
     return {
       id: userId,
       name: "Student",

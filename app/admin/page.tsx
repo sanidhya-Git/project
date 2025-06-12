@@ -17,10 +17,7 @@ export default async function AdminPage() {
     redirect("/sign-in")
   }
 
-  // In a real app, you would check if the user is an admin
-  // For demo purposes, we'll assume the logged-in user is an admin
 
-  // Mock data for users
   const users = [
     {
       id: 1,
