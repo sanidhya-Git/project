@@ -1,0 +1,32 @@
+just make the file name  
+.env
+.env.local
+and do copy the below content from line 6 to 12 in above to files , ensure the files should be in the root dicrectory 
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_a25vd2luZy1nbG93d29ybS0yNy5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_U6eRJSrSLGDs6RanEyvtee2iUMZCgWunhRELWBVAoD
+
+
+#db 
+
+MONGODB_URI=mongodb+srv://constiti:EaAbAj3CjRqJ18Tv@consti.g3h3uaj.mongodb.net/?retryWrites=true&w=majority&appName=Consti
+
+
+steps to execute 
+
+do install mongodb from the https://www.mongodb.com/try/download/community
+it automatically installl the mongo db compass  , in mongo db compass go to the plus + icon and paste the mongo uri and then save and connect 
+open two terminals 
+in terminal 1 : node scripts/seed-database.js
+in terminal 2 : npm i 
+                npm run dev 
+
+
+here you are done for all the things 
+the website will be running on localhost:3000
+for admin you have to type localhost:3000/admin
+
+©developed by sanidhya mehra 
+Do connect on 
+https://www.linkedin.com/in/sanidhya-mehra-a0310a25b/
+portfolio link : https://sanidhyamehra.vercel.app/
